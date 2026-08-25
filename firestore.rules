@@ -1,0 +1,20 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    match /bills/{billId} {
+      allow read: if request.auth != null;
+      allow create: if request.auth != null && request.resource.data.billId is string;
+      allow update, delete: if false;
+    }
+    match /customers/{doc} {
+      allow read: if request.auth != null;
+      allow create: if request.auth != null;
+      allow update, delete: if false;
+    }
+    match /auditLogs/{doc} {
+      allow read: if request.auth != null;
+      allow create: if request.auth != null;
+      allow update, delete: if false;
+    }
+  }
+}

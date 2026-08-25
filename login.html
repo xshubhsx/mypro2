@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="mr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Login - Baghwan Billing</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-auth-compat.js"></script>
+  <script src="js/firebase-config.example.js"></script>
+  <script src="js/firebase.js" defer></script>
+  <script src="js/app.js" defer></script>
+</head>
+<body>
+  <main style="max-width:420px;margin:40px auto;padding:20px;background:#fff;border:1px solid #ddd">
+    <h2>Login</h2>
+    <div>
+      <label>Email</label>
+      <input id="email" type="email" />
+    </div>
+    <div>
+      <label>Password</label>
+      <input id="password" type="password" />
+    </div>
+    <div style="margin-top:10px">
+      <button id="signIn">Sign In</button>
+      <button id="signUp">Sign Up</button>
+    </div>
+    <div id="loginMsg" style="margin-top:8px;color:#a00"></div>
+  </main>
+</body>
+</html>

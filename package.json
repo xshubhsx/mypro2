@@ -1,0 +1,11 @@
+{
+  "name": "baghwan-billing",
+  "version": "1.0.0",
+  "description": "Baghwan Fruit Suppliers - Billing App (E2E tests)",
+  "scripts": {
+    "test:e2e": "playwright test"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.40.0"
+  }
+}
